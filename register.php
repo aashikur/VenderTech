@@ -29,3 +29,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+<style>
+    body{
+        text-align: center;
+    height: 100px;
+    margin-top: 5%;
+    font-size: 1.2rem;
+    }
+</style>

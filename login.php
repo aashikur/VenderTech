@@ -23,12 +23,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             header("Location: dashboard.php"); // Redirect to the next page after login
             exit();
         } else {
-            echo "Invalid password!";
+            echo "Invalid password! <a href='login.html'>Try Again!</a>g";
         }
     } else {
-        echo "No user found!";
+        echo "No user found! <a href='login.html'>Try Again!</a>";
     }
 
     $conn->close();
 }
 ?>
+<style>
+    body{
+        text-align: center;
+    height: 100px;
+    margin-top: 5%;
+    font-size: 1.2rem;
+    }
+</style>
