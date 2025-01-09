@@ -1,45 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Registration</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Vender Tech</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <div class="form-container">
-        <div id="login-form">
-            <h2>Login</h2>
-            <form action="login.php" method="POST">
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <button type="submit">Login</button>
-            </form>
-            <p>Don't have an account? <a href="javascript:void(0);" onclick="showRegisterForm()">Register</a></p>
+
+<body class="bg-black text-white">
+
+    <!-- Header -->
+    <header class="flex justify-between items-center py-6 px-48 bg-black text-white border-b-2 border-gray-700">
+        <!-- Left: Logo -->
+        <div class="flex items-center space-x-3">
+            
+            <a href="index.html"> <span class="text-3xl font-semibold">Vender <span class="underline" style="color:#ffe3a6">Tech</span></span></a>
         </div>
-
-        <div id="register-form" style="display:none;">
-            <h2>Register</h2>
-            <form action="register.php" method="POST">
-                <input type="text" name="username" placeholder="Username" required>
-                <input type="password" name="password" placeholder="Password" required>
-                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
-                <button type="submit">Register</button>
-            </form>
-            <p>Already have an account? <a href="javascript:void(0);" onclick="showLoginForm()">Login</a></p>
+        <!-- Right: Registration Button -->
+        <div>
+            <a style="font-weight:bold; border: 2px solid #b4dcff;color: #b4dcff;" href="login.html" class="px-6 py-3 bg-[#2E3192] text-[#1BFFFF] font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 transition transform duration-300">Registration</a>
         </div>
-    </div>
+    </header>
 
-    <script>
-        function showRegisterForm() {
-            document.getElementById('login-form').style.display = 'none';
-            document.getElementById('register-form').style.display = 'block';
-        }
+    <!-- Hero Section -->
+    <section class="bg-black py-24">
+        <div class="container mx-auto  py-24 px-6 flex justify-between items-center">
+            <!-- Left Section (Text) -->
+            <div class="w-1/2">
+                <h1 style="color: #b4dcff;" class="text-6xl font-bold">WELCOME TO</h1>
+                <p class="mt-4 text-2xl"> <span class="underline font-semibold">Vender Tech</span>, a cutting-edge product management system</p>
+                <p class="mt-1 text-2xl"> Business is now easy.</p>
+                
+                <div class="mt-24">
+                    <a style="font-weight:bold; border: 2px solid #b4dcff;color: #b4dcff;" href="login.html" class="px-6 py-3 bg-[#1BFFFF] text-[#1BFFFF] font-semibold rounded-full shadow-md hover:shadow-lg hover:scale-105 transition transform duration-300">Login</a>
+                </div>
+            </div>
 
-        function showLoginForm() {
-            document.getElementById('register-form').style.display = 'none';
-            document.getElementById('login-form').style.display = 'block';
-        }
-    </script>
+            <!-- Right Section (Image) -->
+            <div class="w-1/2">
+                <img src="img/hero-image.png" alt="Illustration" class="w-full h-auto rounded-lg shadow-md">
+            </div>
+        </div>
+    </section>
+
 </body>
+
 </html>
