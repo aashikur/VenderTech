@@ -1,3 +1,4 @@
 Frontend: HTML files (index.html, login.html, dashboard.php, dashboardShop.php) and CSS (style.css).
 Backend: PHP files (login.php, register.php,  logout.php).
+.........................................
 Database: users.sql
